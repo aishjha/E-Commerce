@@ -1,0 +1,11 @@
+.updateDisabled {
+    display: none;
+}
+
+.userProfileContainer {
+    position: fixed;
+    background-color: white;
+    right: 0;
+    bottom: 4rem;
+}
+

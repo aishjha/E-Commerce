@@ -1,0 +1,39 @@
+.itemContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1), 0 -1px 1px rgb(0, 0, 0, 0.1);
+    margin-bottom: 0.5em;
+    padding-right: 1rem;
+    justify-content: space-between;
+}
+
+.orderItemImage {
+    height: 8em;
+    border-radius: 5px;
+}
+
+.orderItemSpecContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 3rem;
+    font-size: 0.9em;
+}
+
+@media only screen and (max-width: 1400px) {
+    .orderItemSpecContainer {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .orderItemImage {
+        height: 5em;
+    }
+
+    .orderItemSpecContainer {
+        font-size: 0.6rem;
+    }
+
+}

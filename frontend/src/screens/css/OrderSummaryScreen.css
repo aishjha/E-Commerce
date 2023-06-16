@@ -1,0 +1,62 @@
+.orderContainer {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.orderItems {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.totalPriceContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+    height: min-content;
+}
+
+.orderActionButton,
+.orderPayButton {
+    color: whitesmoke;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+.orderActionButton:hover,
+.orderPayButton:hover {
+    color: var(--primary);
+    background-color: orange;
+}
+
+.disableCurrent {
+    display: none;
+}
+
+.totalPriceContainerSpan {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 1400px) {
+    .totalPriceContainer {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .orderContainer {
+        flex-direction: column;
+    }
+}

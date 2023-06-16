@@ -1,0 +1,99 @@
+.addProductTable {
+    width: 80%;
+    margin: auto;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: whitesmoke;
+    border-spacing: 1.5rem;
+    text-transform: uppercase;
+}
+
+.addProductTable thead {
+    color: whitesmoke;
+    font-size: 1.2rem;
+    background-color: var(--primary);
+}
+
+.addProductTable select {
+    width: 80%;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.addProductTable input,
+.addProductTable textarea {
+    width: 80%;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    background-color: whitesmoke;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.addProductTable textarea {
+    border: 1px solid var(--primary);
+}
+
+.addProductTable input:focus,
+.addProductTable textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+
+.addProductTable .addProductButton {
+    border: none;
+    background-color: var(--primary);
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.addProductButton:hover {
+    background-color: orange;
+    color: var(--primary);
+}
+
+.addProductTable .imageInput {
+    border: none;
+}
+
+@media only screen and (max-width: 1060px) {
+    .addProductTable {
+        font-size: 0.9rem;
+    }
+
+    .addProductTable input,
+    .addProductTable textarea,
+    .addProductTable select {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .addProductTable {
+        font-size: 0.7rem;
+    }
+
+    .addProductTable input,
+    .addProductTable textarea,
+    .addProductTable select {
+        font-size: 0.7rem;
+    }
+
+    .addProductTable {
+        width: 100%;
+        margin: 0;
+    }
+
+    .addProductTable .addProductButton {
+        font-size: 0.7rem;
+    }
+}

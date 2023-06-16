@@ -1,0 +1,95 @@
+.shippingContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.3);
+}
+
+.shippingForm {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputWrap {
+    position: relative;
+    width: 100%;
+}
+  
+.inputWrap input {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    text-align: center;
+    width: 100%;
+    background: none;
+    border-radius: 0;
+    border: 1px solid rgb(0,0,0,0.2);
+    margin-bottom: 1em;
+}
+
+.inputWrap input:focus {
+    border: 1px solid var(--primary);
+    outline: none;
+}
+  
+.inputWrap label {
+    position: absolute;
+    font-size: 0.8rem;
+    color: gray;
+    pointer-events: none;
+    left: 10px;
+    top: 10px;
+    transition: 0.3s ease all;
+}
+  
+.inputWrap input:focus ~ label,
+.inputWrap input:valid ~ label {
+    top: 0;
+    left: 0;
+    font-size: 0.6rem;
+}
+
+.inputWrap input:not(:valid) {
+    border: 1px solid rgb(248, 132, 132);
+}
+
+.shippingUpdateButton {
+    color: white;
+    border-radius: 5px;
+    background-color: var(--primary);
+    padding: 1em;
+    margin: 1rem;
+    border: none;
+    align-self: center;
+    transition: 0.3s;
+}
+
+.shippingUpdateButton:hover {
+    background-color: orange;
+    color: var(--primary);
+}
+
+@media only screen and (max-width: 530px) {
+    .inputWrap input {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.7em;
+    }
+
+    .inputWrap label {
+        font-size: 0.7rem;
+    }
+
+    .inputWrap input:focus ~ label,
+    .inputWrap input:valid ~ label {
+        font-size: 0.4rem;
+    }
+
+    .shippingUpdateButton {
+        font-size: 0.7rem;
+        padding: 0.7em;
+        margin: 0.7rem;
+    }
+
+}

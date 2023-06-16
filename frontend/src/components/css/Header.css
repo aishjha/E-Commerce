@@ -1,0 +1,116 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+
+.mainLogo {
+    flex-basis: 5%;
+    padding: 1rem;
+}
+
+.mainLogo img {
+    width: 4rem;
+}
+
+.headerUl {
+    flex-basis: 10%;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.headerLink {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.headerLink:hover {
+    border: 1px solid whitesmoke;
+}
+
+.headerSearchBox {
+    display: flex;
+    flex-basis: 70%;
+    align-items: center;
+}
+
+.searchBoxInput {
+    width: 100%;
+    padding: 0.4rem;
+}
+
+.searchBoxButton {
+    background-color: orange;
+    border: none;
+    transition: 0.2s;
+    padding: 0.5rem;
+}
+
+.searchBoxButton:hover {
+    background-color: darkorange;
+}
+
+.menuDropDownButton {
+    display: none;
+    padding: 1rem;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dropDownFloatingContainer {
+    display: none;
+    position: fixed;
+    padding: 1rem 0;
+    bottom: 0rem;
+    right: auto;
+    left: auto;
+    background-color: var(--primary);
+}
+
+@media only screen and (max-width: 1060px) {
+    .headerUl {
+        background-color: var(--primary);
+        position: absolute;
+        right: 0;
+        top: 5rem;
+    }
+
+    .menuDropDownButton {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerUl, .menuDropDownButton, .mainLogo {
+        display: none;
+    }
+
+    .headerSearchBox {
+        width: 90%;
+    }
+
+    .searchBoxButton {
+        padding: 0.6rem;
+    }
+
+    .dropDownFloatingContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }    
+
+    
+}

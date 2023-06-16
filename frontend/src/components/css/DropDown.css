@@ -1,0 +1,27 @@
+.dropDownClickContainer {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    left: 0;
+    bottom: 4rem;
+    font-size: 1rem;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+
+.dropDownLink {
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    padding: 1em;
+    transition: 0.2s;
+}
+
+.dropDownLink:hover {
+    color: black;
+    background-color: orange;
+}

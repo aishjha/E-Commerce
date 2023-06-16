@@ -1,0 +1,158 @@
+.productScreenContainer {
+    display: flex;
+    margin: 6em auto 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+    position: sticky;
+    top: 6em;
+    height: fit-content;
+}
+
+.imgContainer img {
+    border-radius: 5px;
+    /* box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.3); */
+    width: 30rem;
+}
+
+.descContainer {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.descContainer strong {
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+}
+
+.descContainer p {
+    text-align: center;
+}
+
+.addToCartButton {
+    margin-bottom: 1em;
+    font-size: 1em;
+    padding: 1em;
+    background-color: var(--primary);
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.addToCartButton:hover {
+    color: var(--primary);
+    background-color: orange;
+}
+
+.disabled {
+    width: 50%;
+    margin-bottom: 1em;
+    font-size: 1em;
+    padding: 0.25em;
+    background-color: var(--primary);
+    border: none;
+    color: grey;
+}
+
+.reviewsContainer {
+    margin: 6rem 0 0 0;
+    width: 100%;
+}
+
+.reviewHeading {
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.reviewButton {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: var(--primary);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.reviewButton:hover {
+    color: var(--primary);
+    background-color: orange;
+}
+
+.noReviewH1 {
+    text-align: center;
+}
+
+.reviewForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewForm textarea {
+    margin: 1rem;
+    width: 100%;
+    border: 1px solid var(--primary);
+}
+
+.reviewForm textarea:focus {
+    outline: none;
+    border-color: blue;
+}
+
+.selectContainer {
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    background-color: orange;
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    padding: 0.25em;
+}
+
+@media only screen and (max-width: 1060px) {
+    .productScreenContainer {
+        flex-direction: column;
+    }
+
+    .imgContainer  {
+        position: static;
+    }
+
+    .imgContainer img {
+        width: 20rem;
+    }
+
+    .addToCartButton {
+        font-size: 0.8rem;
+    }
+
+    .reviewForm {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .descContainer {
+        font-size: 0.8rem;
+    }
+
+    .addToCartButton {
+        font-size: 0.7rem;
+    }
+}

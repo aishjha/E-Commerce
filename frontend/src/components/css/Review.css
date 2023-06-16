@@ -1,0 +1,40 @@
+.reviewBoxContainer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0.2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 -1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.reviewBoxContainer:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reviewerName {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.reviewerComment {
+    margin: 1rem;
+}
+
+@media only screen and (max-height: 1060px) {
+    .reviewerName {
+        font-size: 1.1rem;
+    }
+    .reviewerComment {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-height: 530) {
+    .reviewerName {
+        font-size: 0.8rem;
+    }
+    .reviewerComment {
+        font-size: 0.7rem;
+    }
+}

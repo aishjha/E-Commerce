@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary: #1583c3;
+}
+
+.appContainer {
+    min-height: calc(100vh - 159px);
+}

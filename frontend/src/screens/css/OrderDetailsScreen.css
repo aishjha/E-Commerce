@@ -1,0 +1,37 @@
+.shippingDetails {
+    display: flex;
+    position: sticky;
+    top: 6rem;
+    padding: 1em;
+    margin: 1rem;
+    font-size: 0.9rem;
+    flex-direction: column;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.2);
+    height: fit-content;
+}
+
+.deliveryStatus {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    box-shadow: 0 4px 4px rgb(0, 0, 0, 0.2);
+    font-size: 1em;
+    padding: 1em;
+}
+.orderItems {
+    margin: 1rem;
+}
+
+
+@media only screen and (max-width: 830) {
+    .shippingDetails, .deliveryStatus {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 530) {
+    .shippingDetails, .deliveryStatus {
+        font-size: 0.6rem;
+    }
+}
